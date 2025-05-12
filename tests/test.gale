@@ -1,0 +1,21 @@
+fun main() -> Void:
+    
+    while true:
+        int x = 7;
+        println("Guess a number");
+
+        int guess = (int)input();
+
+        if guess != x:
+            println("Try again");
+        end
+
+        println("You win");
+        break;
+    end
+        
+    for i in 0..7:
+        println("Hello, world!");
+    end
+
+end
