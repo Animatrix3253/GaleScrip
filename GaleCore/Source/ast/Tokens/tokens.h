@@ -13,30 +13,29 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 */
+
 #pragma once
-#include "Token.h"
-#include <string>
 
 namespace gale::lexer {
-    class Lexer {
-    
-    public:
-        Lexer(const std::string& source){}
 
-        Token nextToken();
+    enum class TokenType {
+        // Types
+        Int,
+        LeftParen,
+        RightParen,
+        // Operations
+        Subtract,
+        Addition,
+        Multiply,
+        Division,
+        Modulus,
+        // Keywords
+    }
 
-    private:
-        std::string source;
-        size_t pos;
+    struct Token {
+        TokenType type;
+        std::string lexeme;
         int line;
         int column;
-
-        char peekChar() const;
-        char currentChar() const;
-        void advance();
-        void skipWhiteSpace();
-        Token makeId();
-        Token makeNumber();
-        Token makeString();
     }
 }

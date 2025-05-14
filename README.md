@@ -1,9 +1,15 @@
 # GaleScrip
-My personal niche lang
-
 ---
-# Using
-To use gale you can clone the repository, navigate to \<Placeholder\> and run \<Placeholder\>
+My personal niche lang
+# Installation
+---
+If you just want a binary this can be obtained from \<TBD\>
+
+# Building from source
+---
+### Linux && MacOS
+To use gale you can clone the repository and run ./build.sh
+### Windows TBD
 
 ---
 # Liscensing
